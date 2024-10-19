@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="calculator">
+        <form action="">
+            <input id="display" class="display" readonly>
+
+          <div>
+            <input onclick="clearDisplay()" type="button" class="reset" value="AC">
+            <input onclick="deleteNumber()" type="button" class="reset" value="DE">
+            <input onclick="appendToDisplay('.')" type="button" class="reset" value=".">
+            <input onclick="appendToDisplay('/')" type="button" class="operator divide" value="/">
+          </div>
+
+          <div>
+            <input onclick="appendToDisplay('7')" type="button" class="number" value="7">
+            <input onclick="appendToDisplay('8')" type="button" class="number" value="8">
+            <input onclick="appendToDisplay('9')" type="button" class="number" value="9">
+            <input onclick="appendToDisplay('*')" type="button" class="operator multiply" value="*">
+          </div>
+
+          
+          <div>
+            <input onclick="appendToDisplay('4')" type="button" class="number" value="4">
+            <input onclick="appendToDisplay('5')" type="button" class="number" value="5">
+            <input onclick="appendToDisplay('6')" type="button" class="number" value="6">
+            <input onclick="appendToDisplay('-')" type="button" class="operator subtract" value="-">
+          </div>
+
+          
+          <div>
+            <input onclick="appendToDisplay('1')" type="button" class="number" value="1">
+            <input onclick="appendToDisplay('2')" type="button" class="number" value="2">
+            <input onclick="appendToDisplay('3')" type="button" class="number" value="3">
+            <input onclick="appendToDisplay('+')" type="button" class="operator sum" value="+">
+          </div>
+
+          <div>
+            <input onclick="appendToDisplay('00')" type="button" class="number" value="00">
+            <input onclick="appendToDisplay('0')" type="button" class="number" value="0">
+            <input onclick="calculate()" type="button" class="operator equal" value="=">
+          </div>
+        </form>
+      </div>
+    </div>
+      
+    <script src="assets/scripts/scripts.js">
+      
+    </script>
+  </body>
+</html>
